@@ -1,2 +1,5 @@
 # model_checker
 Performs liveness and safety checks for a program graph
+
+My program has two classes, AdjacencyList and AdjacencyMatrix, that both extend the IGraph interface. These two classes both represent a graph, except one represents a graph as a list and the other represents a graph as a matrix. The StateMachine class takes in an IGraph. The StateMachine can populate the graph with nodes and edges using its initFromCSV method, or you can manually call addTranstition and addState to populate the IGraph. initFromCSV uses the Parser object to parse each row in each CSV file. A StateMachine contains three check methods. checkNever is a safety check that makes sure that the program never gets to a state with certain properties. If it does, it returns an option with that state. checkAlways makes sure that the program always gets to a state with certain properties. If it doesn’t, it returns an option with that state. checkEventually is a liveness check that checks whether from a certain state, every possible pathway eventually leads to a state with certain properties. The overall purpose is to build a StateMachine and then run the check methods on it.
+
