@@ -1,0 +1,10 @@
+id,data
+1,hope=red;waterman=green
+2,hope=green;waterman=yellow
+3,hope=yellow;waterman=green
+4,hope=red;waterman=yellow
+5,hope=yellow;waterman=yellow
+6,hope=green;waterman=green
+7,hope=green;waterman=red
+8,hope=yellow;waterman=red
+9,hope=red;waterman=red
